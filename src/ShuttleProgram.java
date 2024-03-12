@@ -2,19 +2,24 @@ public class ShuttleProgram {
 
     public static void main(String[] args) {
 
-       for ( int i = 0; i <= 100; i++) {
-            if ((((i % 4) / 10) == 0) || (((i % 9) / 10) == 0)) {
+        int shuttleNum = 0;
+        while (shuttleNum <= 100) {
+            if (shuttleNum % 4 == 0 || shuttleNum % 9 == 0) {
+                shuttleNum++;
+                continue;
+
+            } else
+
+                System.out.println("shuttle № " + shuttleNum);
+            shuttleNum++;
 
 
-
-            }
-           System.out.println("shuttle № " + i);
-
-
-
-            }
-            }
         }
+
+
+    }
+}
+
 
 
 
